@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
-
 # github login
 echo ${GITHUB_TOKEN} | gh auth login --with-token
 
