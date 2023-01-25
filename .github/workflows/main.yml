@@ -8,6 +8,7 @@ on:
 env:
   DOCKERHUB_USER: ${{ secrets.DOCKERHUB_USER }}
   DOCKERHUB_PASS: ${{ secrets.DOCKERHUB_PASS }}
+  GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
 
 jobs:
   Pipeline:
@@ -31,3 +32,4 @@ jobs:
       with:
         DOCKERHUB_USER: ${DOCKERHUB_USER}
         DOCKERHUB_PASS: ${DOCKERHUB_PASS}
+        GIT_TOKEN: ${GIT_TOKEN}
